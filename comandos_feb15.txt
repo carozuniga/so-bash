@@ -1,0 +1,116 @@
+    1  cd /home/operativos/
+    2  mkdir repositories
+    3  ls
+    4  ls -all
+    5  vi .bashrc
+    6  export GIT_TOKEN="ABC123"
+    7  ECHO $GIT_TOKEN
+    8  echo $GIT_TOKEN
+    9  vim list.sh
+   10  ls -al
+   11  chmod 000 list.sh
+   12  sh list.sh
+   13  chmod 100 list.sh
+   14  ls -l
+   15  sh list.sh
+   16  cat list.sh 
+   17  chmod +x list.sh 
+   18  ./list.sh 
+   19  chmod 500 list.sh 
+   20  ./list.sh 
+   21  ls -al
+   22  cat list.sh 
+   23  cp list.sh /tmp/list.sh
+   24  exit
+   25  ls
+   26  cd /tmp
+   27  ls
+   28  cat list.sh
+   29  ls
+   30  ls -l
+   31  cat andres.sh
+   32  vi variable.sh
+   33  LS
+   34  ls
+   35  exit
+   36  cd /tmp
+   37  ls -l
+   38  ls -al
+   39  rm .variable.sh.swo
+   40  exit
+   41  ls
+   42  /home/operativos/
+   43  cd /home/operativos/
+   44  ls
+   45  cd repositories
+   46  git clone https://github.com/carozuniga/so-bash.git
+   47  ls -al
+   48  cd so-bash
+   49  ls -l
+   50  chmod +x count.sh
+   51  ls -l
+   52  ./count.sh
+   53  jobs
+   54  fg
+   55  ./count.sh
+   56  jobs
+   57  fg
+   58  passwd operativos 
+   59  exit
+   60  cd ~/
+   61  whoami
+   62  pwd
+   63  mkdir -p{directorio1,directorio2,directorio3}
+   64  mkdir -p {directorio1,directorio2,directorio3}
+   65  vi list1
+   66  yum install nano -y
+   67  sudo yum install nano -y
+   68  ls
+   69  nano mylist2
+   70  touch .list3
+   71  mv .list3 .mylist3
+   72  mv {list1,mylist2,.mylist3} directorio1/
+   73  cd directorio1
+   74  ls
+   75  ls -a
+   76  ls list*
+   77  ls *list
+   78  ls ??list?
+   79  ls ~/
+   80  cp .mylist3 mylist4
+   81  rm .mylist3
+   82  rom -rf ../directorio3
+   83  rm -rf ../directorio3
+   84  cd ../directorio2
+   85  wget http://www.gutenberg.org/cache/epub/19033/pg19033.txt
+   86  yum install wget 
+   87  sudo yum install wget 
+   88  wget http://www.gutenberg.org/cache/epub/19033/pg19033.txt
+   89  cat pg19033.txt
+   90  less pg19033.txt
+   91  head pg19033.txt
+   92  tail pg19033.txt 
+   93  grep -in Alice pg19033.txt
+   94  cat > mylist4
+   95  cat >> mylist4
+   96  cat mylist4
+   97  ls
+   98  cat list1 mylist2 > biglist
+   99  cd ..
+  100  ls
+  101  cd directorio1
+  102  ls
+  103  cat list1 mylist2 > biglist
+  104  sort biglist
+  105  sort biglist > ordlist
+  106  who
+  107  who | sort
+  108  who | wc -l
+  109  nano myscript
+  110  chmod 700 myscript
+  111  ./myscript
+  112  history
+  113  set history=100
+  114  cd ..
+  115  pwd
+  116  history > comandos_feb15.txt
