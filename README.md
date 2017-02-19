@@ -47,7 +47,24 @@ Universidad Icesi
 este comando imprime los valores de las variables de entorno especificadas, si no se especifica ninguna imprime todos los valores junto con el nombre de cada una.
 Este comando es util porque las variables de entorno forman un conjunto de valores dinamicos que normalmente afectan el comportamiento de los procesos en una computadora.  Algunas son útiles para no tener que escribir muchas opciones al ejecutar un programa, otras las utiliza el propio shell (PATH, PS1,…). 
 
-3. 
+3. para crear una variable de entorno se necesita emplear el comando export NOMBRE=CONTENIDO 
+ej: 
+![2] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable.PNG)
+
+para crear una variable permanente se puede hacer de varias maneras: 
+- una de ellas es crear un archivo.sh en el directorio /etc/profile.d/ y allí poner la declaración de la variable que queremos crear y que sea permanente.
+ ej: en este caso creé un archivo llamado variable.sh que contiene la variable llamada GATO
+ 
+ ![3] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable5.png)
+
+- otra forma es editar directamente el archivo profile ubicado en /etc y allí poner la declaración de la variable que queremos crear y que sea permanente, en este archivo se inicializan todas las variables permanentes del sistema. 
+ ej: en este caso creé la variable llamada VACA
+
+ ![4] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable3.PNG)
+
+ las formas anteriores funcionan debido a que al inicio del sistema se corren todos estos archivos para poder inicializar las variables de entorno, entonces en la siguiente captura podemos observar que al reiniciar el sistema e imprimir todas las variables de entorno están las dos creadas anteriormente de forma permanente. 
+ ![5] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable4.PNG)
+
 
 
 
@@ -57,4 +74,5 @@ Este comando es util porque las variables de entorno forman un conjunto de valor
 - http://docencia.udea.edu.co/cci/linux/dia4/directorio.htm
 - https://es.wikipedia.org/wiki/Variable_de_entorno
 - http://www.sanfoundry.com/printenv-command-usage-examples-linux/
+- http://www.sysadmit.com/2016/04/linux-variables-de-entorno-permanentes.html
     
