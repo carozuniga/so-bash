@@ -65,6 +65,30 @@ para crear una variable permanente se puede hacer de varias maneras:
  las formas anteriores funcionan debido a que al inicio del sistema se corren todos estos archivos para poder inicializar las variables de entorno, entonces en la siguiente captura podemos observar que al reiniciar el sistema e imprimir todas las variables de entorno están las dos creadas anteriormente de forma permanente. 
  ![5] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable4.PNG)
 
+4. para instalar un programa desde su fuente, primero es necesario descargarlo con el comando wget, despues de esto, lo descomprimimos y usamos los comandos siguientes:
+
+ - ./configure
+ Este comando verifica que todas las dependencias que el software que queremos compilar e instalar estén instaladas y funcionando correctamente.
+ 
+ - make
+ El comando make es un comando que inicia el programa make (GNU Make), el cual se encarga de leer los archivos makefile que se generan después del ./configure.
+ 
+ - make install
+ Una vez terminada la compilación ejecutamos make install para ejecutar la instalación del ejecutable del programa ya compilado. Los ejecutables de los programas se instalaran por defecto en la carpeta /usr/bin.
+ 
+ ejemplo: en mi caso descargué el .tar de curl y lo descomprimí como se observa a continuación:
+ 
+ ![6] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/ls.PNG)
+ 
+ después de descomprimir nos pasamos al directorio que se acabo de descomprimir y escribimos el comando ./configure y al finalizar obtendremos un resumen como este:
+ 
+ ![7] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/configure.PNG)
+ 
+ si todo sale exitoso como arriba, podremos ejecutar enseguida los comandos make y makefile. al finalizar los dos comandos anteriores ya tendremos el programa instalado desde su codigo fuente y en mi caso lo puedo comprobar utilizando el comando curl 
+ 
+ ![8] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/make2.PNG)
+ 
+ 
 
 
 
@@ -75,4 +99,7 @@ para crear una variable permanente se puede hacer de varias maneras:
 - https://es.wikipedia.org/wiki/Variable_de_entorno
 - http://www.sanfoundry.com/printenv-command-usage-examples-linux/
 - http://www.sysadmit.com/2016/04/linux-variables-de-entorno-permanentes.html
+- https://hackinglinux.wordpress.com/2013/08/01/tutorial-instalar-programas-desde-el-codigo-fuente-en-linux/
+- https://www.digitalocean.com/community/tutorials/how-to-compile-and-install-packages-from-source-using-make-on-a-vps
+- http://www.linuxadictos.com/tutorial-como-instalar-cualquier-paquete-en-gnulinux.html
     
