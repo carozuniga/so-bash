@@ -6,7 +6,8 @@ Universidad Icesi
 
 ## Comandos Linux
 
-![1] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/history.PNG)
+![][historia] 
+
 
 ## Solución a las preguntas 
 
@@ -49,21 +50,21 @@ Este comando es util porque las variables de entorno forman un conjunto de valor
 
 3. para crear una variable de entorno se necesita emplear el comando export NOMBRE=CONTENIDO 
 ej: 
-![2] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable.PNG)
+![][variable] 
 
 para crear una variable permanente se puede hacer de varias maneras: 
 - una de ellas es crear un archivo.sh en el directorio /etc/profile.d/ y allí poner la declaración de la variable que queremos crear y que sea permanente.
  ej: en este caso creé un archivo llamado variable.sh que contiene la variable llamada GATO
  
- ![3] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable5.png)
-
+ ![][variable2] 
+ 
 - otra forma es editar directamente el archivo profile ubicado en /etc y allí poner la declaración de la variable que queremos crear y que sea permanente, en este archivo se inicializan todas las variables permanentes del sistema. 
  ej: en este caso creé la variable llamada VACA
 
- ![4] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable3.PNG)
+ ![][variable3] 
 
  las formas anteriores funcionan debido a que al inicio del sistema se corren todos estos archivos para poder inicializar las variables de entorno, entonces en la siguiente captura podemos observar que al reiniciar el sistema e imprimir todas las variables de entorno están las dos creadas anteriormente de forma permanente. 
- ![5] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/variable4.PNG)
+ ![][variable4] 
 
 4. para instalar un programa desde su fuente, primero es necesario descargarlo con el comando wget, despues de esto, lo descomprimimos y usamos los comandos siguientes:
 
@@ -78,15 +79,15 @@ para crear una variable permanente se puede hacer de varias maneras:
  
  ejemplo: en mi caso descargué el .tar de curl y lo descomprimí como se observa a continuación:
  
- ![6] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/ls.PNG)
+ ![][ls] 
  
  después de descomprimir nos pasamos al directorio que se acabo de descomprimir y escribimos el comando ./configure y al finalizar obtendremos un resumen como este:
  
- ![7] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/configure.PNG)
+ ![][configure] 
  
  si todo sale exitoso como arriba, podremos ejecutar enseguida los comandos make y makefile. al finalizar los dos comandos anteriores ya tendremos el programa instalado desde su codigo fuente y en mi caso lo puedo comprobar utilizando el comando curl 
  
- ![8] (https://github.com/carozuniga/so-bash/blob/master/IMAGES/make2.PNG)
+ ![][make] 
  
  
 
@@ -103,3 +104,12 @@ para crear una variable permanente se puede hacer de varias maneras:
 - https://www.digitalocean.com/community/tutorials/how-to-compile-and-install-packages-from-source-using-make-on-a-vps
 - http://www.linuxadictos.com/tutorial-como-instalar-cualquier-paquete-en-gnulinux.html
     
+
+[historia]: IMAGES/history.PNG
+[variable]: IMAGES/variable.PNG
+[variable2]: IMAGES/variable5.png
+[variable3]: IMAGES/variable3.PNG
+[variable4]: IMAGES/variable4.PNG
+[ls]: IMAGES/ls.PNG
+[configure]: IMAGES/configure.PNG
+[make]: IMAGES/make2.PNG
