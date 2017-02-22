@@ -58,7 +58,7 @@ para crear una variable permanente se puede hacer de varias maneras:
  
  ![][variable2] 
  
-- otra forma es editar directamente el archivo profile ubicado en /etc y allí poner la declaración de la variable que queremos crear y que sea permanente, en este archivo se inicializan todas las variables permanentes del sistema. 
+- otra forma es editar directamente el archivo profile ubicado en /etc y allí poner la declaración de la variable que queremos crear y que sea permanente, en este archivo se inicializan todas las variables permanentes del sistema, sin embargo no se considera una muy buena practica lo anterior dado que modificar este archivo puede llegar a dañar alguna de las variables del sistema. 
  ej: en este caso creé la variable llamada VACA
 
  ![][variable3] 
@@ -85,7 +85,7 @@ para crear una variable permanente se puede hacer de varias maneras:
  
  ![][configure] 
  
- si todo sale exitoso como arriba, podremos ejecutar enseguida los comandos make y makefile. al finalizar los dos comandos anteriores ya tendremos el programa instalado desde su codigo fuente y en mi caso lo puedo comprobar utilizando el comando curl 
+ si todo sale exitoso como arriba,  podremos ejecutar enseguida los comandos make y makefile (si sale algún error será necesario instalar lo que pida adicionalmente, como por ejemplo el compilador de C). al finalizar los dos comandos anteriores ya tendremos el programa instalado desde su codigo fuente y en mi caso lo puedo comprobar utilizando el comando curl 
  
  ![][make] 
  
